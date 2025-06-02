@@ -1,94 +1,97 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from 'next/link';
+import './globals.css';
 
-export default function Home() {
+const countries = [
+  { name: 'Italy', flag: '/flags/italy.png', href: '/italy' },
+  { name: 'Japan', flag: '/flags/japan.png', href: '/japan' },
+  { name: 'Mexico', flag: '/flags/mexico.png', href: '/mexico' },
+  { name: 'France', flag: '/flags/france.png', href: '/france' },
+  { name: 'Tunisia', flag: '/flags/tunisia.png', href: '/tunisia' },
+];
+
+const recipes = [
+  {
+    title: 'Spaghetti Carbonara',
+    date: 'April 30, 2025',
+    desc: 'A creamy, cheesy Roman pasta dish made with eggs, Pecorino Romano, pancetta, and pepper. Fast, comforting, and so satisfying.',
+    image: '/recipes/Spaghetti-Carbonara.jpg',
+    href: '/italy/spaghetti-carbonara'
+  },
+  {
+    title: 'Chicken Teriyaki',
+    date: 'April 28, 2025',
+    desc: 'Juicy grilled chicken glazed with a rich, sweet-savory Japanese teriyaki sauce. Perfect with rice and veggies!',
+    image: '/recipes/Chicken-teriyaki.jpg',
+    href: '/japan/chicken-teriyaki'
+  },
+  {
+    title: 'Tacos al Pastor',
+    date: 'April 25, 2025',
+    desc: 'Marinated pork cooked with pineapple and spices, served on soft corn tortillas. A true Mexican street food classic!',
+    image: '/recipes/tacos.jpg',
+    href: '/mexico/tacos-al-pastor'
+  }
+];
+
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <div className="headline-bar">
+        <strong>Simple recipes made for</strong>
+        <span className="script"> real, actual, everyday life.</span>
+      </div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+      <div className="flag-grid">
+        {countries.map((c, i) => (
+          <Link key={i} href={c.href} className="flag-card-tile">
+            <img src={c.flag} alt={c.name} className="flag-full-img" />
+            <div className="flag-tile-label">{c.name}</div>
+          </Link>
+        ))}
+      </div>
+
+      <h2 className="section-title">Popular Recipes</h2>
+      <div className="blog-recipe-list">
+        {recipes.map((r, i) => (
+          <div className="blog-recipe-card" key={i}>
+            <Link href={r.href}>
+              <img src={r.image} alt={r.title} className="blog-recipe-img" />
+            </Link>
+            <div className="blog-recipe-content">
+              <div className="blog-recipe-date">{r.date}</div>
+              <Link href={r.href} className="blog-recipe-title">{r.title}</Link>
+              <p>{r.desc}</p>
+              <Link href={r.href} className="blog-recipe-link">
+                <span>Continue Reading</span>
+                <div className="recipe-underline" />
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <footer className="footer">
+        <div className="follow-text">FOLLOW US</div>
+        <div className="social-icons">
+          <a href="https://instagram.com" className="icon" data-label="Instagram" target="_blank">
+            <i className="fab fa-instagram"></i>
           </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
+          <a href="https://pinterest.com" className="icon" data-label="Pinterest" target="_blank">
+            <i className="fab fa-pinterest-p"></i>
+          </a>
+          <a href="https://tiktok.com" className="icon" data-label="TikTok" target="_blank">
+            <i className="fab fa-tiktok"></i>
+          </a>
+          <a href="https://facebook.com" className="icon" data-label="Facebook" target="_blank">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com" className="icon" data-label="X" target="_blank">
+            <i className="fab fa-x-twitter"></i>
+          </a>
+          <a href="https://youtube.com" className="icon" data-label="YouTube" target="_blank">
+            <i className="fab fa-youtube"></i>
           </a>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
       </footer>
     </div>
   );

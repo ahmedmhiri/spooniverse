@@ -1,42 +1,343 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  --font-playfair: var(--font-playfair);
+  --font-dancing: var(--font-dancing);
+  --font-inter: var(--font-inter);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  font-family: var(--font-inter);
+  background: #fff;
+  color: #111;
+  line-height: 1.6;
 }
 
-a {
-  color: inherit;
+h1, h2, h3, .logo {
+  font-family: var(--font-playfair);
+}
+
+.headline-bar .script {
+  font-family: var(--font-dancing);
+}
+
+/* Top Header */
+.header {
+  position: relative;
+  width: 90%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: white;
+  color: #333;
+  margin-left: 70px;
+}
+.header.transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  color: white;
+}
+/* Logo styling */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
   text-decoration: none;
+  font-family: var(--font-dancing);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+  margin-right: 150px;
 }
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header.transparent .logo,
+.header.transparent .nav-links a {
+  color: white;
+}
+
+.header:not(.transparent) .logo,
+.header:not(.transparent) .nav-links a {
+  color: #333;
+}
+
+.nav-links a:hover {
+  color: #702963;
+}
+
+/* Headline Text */
+.headline-bar {
+  text-align: center;
+  font-size: 24px;
+  margin: 40px 0 20px;
+  color: #111;
+}
+
+.headline-bar strong {
+  font-family: var(--font-playfair);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.headline-bar .script {
+  font-family: var(--font-dancing);
+  font-size: 30px;
+  color: #702963;
+  margin-left: 8px;
+  font-style: normal;
+}
+
+/* Modern Flag Cards (Full Tile) */
+.flag-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.flag-card-tile {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.flag-card-tile:hover {
+  transform: scale(1.02);
+}
+
+.flag-full-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.flag-tile-label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #702963;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 35px;
+  color: #550d48;
+  margin-top: 60px;
+  font-weight: 600;
+}
+
+/* Blog-Style Recipes */
+.blog-recipe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1000px;
+  margin-left: 120px;
+}
+
+.blog-recipe-card {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+}
+
+.blog-recipe-img {
+  width: 250px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.blog-recipe-img:hover {
+  transform: scale(1.02);
+}
+
+.blog-recipe-date {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.blog-recipe-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+  font-family: var(--font-playfair);
+  display: inline-block;
+  margin: 6px 0 12px;
+}
+
+.blog-recipe-title:hover {
+  color: #702963;
+}
+
+.blog-recipe-link {
+  color: #702963;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 8px;
+  display: inline-block;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.blog-recipe-link .recipe-underline {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #702963;
+  transition: width 0.3s ease;
+}
+
+.blog-recipe-link:hover .recipe-underline {
+  width: 100%;
+}
+.footer {
+  background-color: #702963;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.follow-text {
+  font-family: var(--font-playfair);
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #702963;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+.icon:hover {
+  background: #fff;
+  color: #000;
+}
+
+.icon::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -32px;
+  background: #2e1a2f;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(5px);
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+
+.icon:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*hero part */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+  font-size: 1.4rem;
+}
+/*italian-specific hero */
+.italian-hero {
+  background-image: url('/herosec/italy.png'); 
+}
+
+/* Japan-specific hero */
+.japan-hero {
+  background-image: url('/herosec/japan.png'); 
+  .mexican-hero {
+  background-image: url('/mexico.jpg'); /* make sure this file exists in /public */
+}
+
+}
+
+
+
+
+
