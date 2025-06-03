@@ -1,0 +1,187 @@
+{
+  "france": [
+    {
+      "title": "Boeuf Bourguignon",
+      "date": "April 30, 2025",
+      "desc": "A slow-cooked beef stew braised in red wine, with mushrooms, onions, carrots, and herbs. A rich and comforting French classic.",
+      "image": "/recipes/boeuf bourguignon.jpg",
+      "href": "/france/boeuf-bourguignon"
+    },
+    {
+      "title": "Coq au Vin",
+      "date": "April 29, 2025",
+      "desc": "Chicken braised in red wine, with mushrooms, onions, garlic, and herbs. A rustic French dish full of flavor.",
+      "image": "/recipes/coq au vin.jpg",
+      "href": "/france/coq-au-vin"
+    },
+    {
+      "title": "Ratatouille",
+      "date": "April 28, 2025",
+      "desc": "A medley of seasonal vegetables like eggplant, zucchini, and peppers, stewed with garlic and olive oil. A light yet flavorful dish from Provence.",
+      "image": "/recipes/ratatouille.jpg",
+      "href": "/france/ratatouille"
+    },
+    {
+      "title": "Quiche Lorraine",
+      "date": "April 27, 2025",
+      "desc": "A savory pie made with eggs, cream, bacon, and cheese. This iconic French dish is perfect for brunch or a light meal.",
+      "image": "/recipes/quiche lorraine.jpg",
+      "href": "/france/quiche-lorraine"
+    },
+    {
+      "title": "Soupe à l'Oignon",
+      "date": "April 26, 2025",
+      "desc": "A deeply flavorful French onion soup made from caramelized onions, beef stock, and topped with melted cheese and toasted bread.",
+      "image": "/recipes/soupe a loignon.jpg",
+      "href": "/france/soupe-a-l-oignon"
+    }
+  ],
+  "italy": [
+    {
+      "title": "Spaghetti Carbonara",
+      "date": "April 30, 2025",
+      "desc": "A creamy, cheesy Roman pasta dish made with eggs, Pecorino Romano, pancetta, and pepper. Fast, comforting, and so satisfying.",
+      "image": "/recipes/Spaghetti-Carbonara.jpg",
+      "href": "/italy/spaghetti-carbonara"
+    },
+    {
+      "title": "Margherita Pizza",
+      "date": "April 29, 2025",
+      "desc": "A Neapolitan classic topped with fresh tomatoes, mozzarella, and basil. Simple ingredients, bold Italian flavor.",
+      "image": "/recipes/Margherita_Pizza.jpg",
+      "href": "/italy/margherita-pizza"
+    },
+    {
+      "title": "Lasagna alla Bolognese",
+      "date": "April 28, 2025",
+      "desc": "Layered pasta sheets with rich meat ragù, béchamel, and Parmigiano-Reggiano. A comforting baked favorite from Emilia-Romagna.",
+      "image": "/recipes/lasagne-alla-bolognese.webp",
+      "href": "/italy/lasagna-alla-bolognese"
+    },
+    {
+      "title": "Risotto alla Milanese",
+      "date": "April 27, 2025",
+      "desc": "Creamy saffron-infused risotto from Milan, traditionally served with ossobuco or enjoyed on its own.",
+      "image": "/recipes/risotoo.jpg",
+      "href": "/italy/risotto-alla-milanese"
+    },
+    {
+      "title": "Tiramisu",
+      "date": "April 26, 2025",
+      "desc": "A beloved Italian dessert with layers of espresso-soaked ladyfingers and mascarpone cream, dusted with cocoa.",
+      "image": "/recipes/Tiramisu.jpg",
+      "href": "/italy/tiramisu"
+    }
+  ],
+  "japan": [
+    {
+      "title": "Chicken Teriyaki",
+      "date": "April 30, 2025",
+      "desc": "Juicy grilled chicken glazed in a sweet-savory teriyaki sauce, served with steamed rice and sesame seeds. A classic crowd-pleaser.",
+      "image": "/recipes/chicken-teriyaki.jpg",
+      "href": "/japan/chicken-teriyaki"
+    },
+    {
+      "title": "Sushi Platter",
+      "date": "April 29, 2025",
+      "desc": "A colorful selection of nigiri and maki rolls with fresh salmon, tuna, shrimp, and vegetables. A beautiful harmony of taste and texture.",
+      "image": "/recipes/sushi-platter.jpg",
+      "href": "/japan/sushi-platter"
+    },
+    {
+      "title": "Ramen",
+      "date": "April 28, 2025",
+      "desc": "A comforting bowl of Japanese noodle soup with rich broth, sliced pork, soft-boiled egg, and nori. Perfectly slurpable.",
+      "image": "/recipes/ramen.jpg",
+      "href": "/japan/ramen"
+    },
+    {
+      "title": "Onigiri",
+      "date": "April 27, 2025",
+      "desc": "Hand-shaped rice balls filled with pickled plum, salmon, or tuna, wrapped in nori. A popular portable snack in Japan.",
+      "image": "/recipes/onigiri-salmon.jpg",
+      "href": "/japan/onigiri"
+    },
+    {
+      "title": "Miso Soup",
+      "date": "April 26, 2025",
+      "desc": "A traditional soup made from fermented soybean paste, dashi broth, tofu, and seaweed. Light, warm, and nourishing.",
+      "image": "/recipes/vegan-miso-soup.jpg",
+      "href": "/japan/miso-soup"
+    }
+  ],
+  "mexico": [
+    {
+      "title": "Tacos al Pastor",
+      "date": "April 30, 2025",
+      "desc": "Marinated pork cooked on a vertical spit with pineapple, served on corn tortillas with onion, cilantro, and salsa.",
+      "image": "/recipes/tacos.jpg",
+      "href": "/mexico/tacos-al-pastor"
+    },
+    {
+      "title": "Chiles en Nogada",
+      "date": "April 29, 2025",
+      "desc": "Stuffed poblano peppers topped with walnut sauce, pomegranate seeds, and parsley. A patriotic and flavorful dish.",
+      "image": "/recipes/Chiles-en-Nogada.jpeg",
+      "href": "/mexico/chiles-en-nogada"
+    },
+    {
+      "title": "Tamales",
+      "date": "April 28, 2025",
+      "desc": "Corn dough filled with meat, vegetables, or sweet flavors, wrapped in corn husks and steamed to perfection.",
+      "image": "/recipes/Tamales.jpeg",
+      "href": "/mexico/tamales"
+    },
+    {
+      "title": "Pozole",
+      "date": "April 27, 2025",
+      "desc": "A hearty traditional soup made with hominy and pork, topped with shredded lettuce, radish, oregano, and lime.",
+      "image": "/recipes/Pozole.jpg",
+      "href": "/mexico/pozole"
+    },
+    {
+      "title": "Mole Poblano",
+      "date": "April 26, 2025",
+      "desc": "A rich, dark sauce made with chiles, chocolate, spices, and nuts, traditionally served over turkey or chicken.",
+      "image": "/recipes/Mole-Poblano.jpg",
+      "href": "/mexico/mole-poblano"
+    }
+  ],
+  "tunisia": [
+    {
+      "title": "Couscous Tunisien",
+      "date": "April 30, 2025",
+      "desc": "A national dish made from steamed semolina, spiced vegetables, and tender lamb or fish, served with rich tomato sauce.",
+      "image": "/recipes/couscous.jpg",
+      "href": "/tunis/couscous-tunisien"
+    },
+    {
+      "title": "Brik à l'œuf",
+      "date": "April 29, 2025",
+      "desc": "Crispy fried pastry filled with egg, tuna, capers, and parsley. A traditional appetizer with a perfect golden crunch.",
+      "image": "/recipes/Brik.jpeg",
+      "href": "/tunis/brik-a-loeuf"
+    },
+    {
+      "title": "Ojja Merguez",
+      "date": "April 28, 2025",
+      "desc": "Spicy tomato and harissa stew with poached eggs and grilled merguez sausage. A warming dish served with bread.",
+      "image": "/recipes/ojja-merguez.jpg",
+      "href": "/tunis/ojja-merguez"
+    },
+    {
+      "title": "Lablabi",
+      "date": "April 27, 2025",
+      "desc": "A hearty chickpea soup flavored with garlic, cumin, harissa, and olive oil, topped with pieces of bread and egg.",
+      "image": "/recipes/Lablabi.jpeg",
+      "href": "/tunis/lablabi"
+    },
+    {
+      "title": "Kaak Warka",
+      "date": "April 26, 2025",
+      "desc": "A delicate Tunisian pastry ring filled with almond paste and scented with rose water. Light, fragrant, and sweet.",
+      "image": "/recipes/kaak-Warka.webp",
+      "href": "/tunis/kaak-warka"
+    }
+  ]
+}
