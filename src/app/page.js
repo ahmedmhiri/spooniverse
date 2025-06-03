@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import './globals.css';
-
+import Footer from  './footer';
 const countries = [
   { name: 'Italy', flag: '/flags/italy.png', href: '/italy' },
   { name: 'Japan', flag: '/flags/japan.png', href: '/japan' },
@@ -69,30 +69,7 @@ export default function HomePage() {
           </div>
         ))}
       </div>
-
-      <footer className="footer">
-        <div className="follow-text">FOLLOW US</div>
-        <div className="social-icons">
-          <a href="https://instagram.com" className="icon" data-label="Instagram" target="_blank">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="https://pinterest.com" className="icon" data-label="Pinterest" target="_blank">
-            <i className="fab fa-pinterest-p"></i>
-          </a>
-          <a href="https://tiktok.com" className="icon" data-label="TikTok" target="_blank">
-            <i className="fab fa-tiktok"></i>
-          </a>
-          <a href="https://facebook.com" className="icon" data-label="Facebook" target="_blank">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://twitter.com" className="icon" data-label="X" target="_blank">
-            <i className="fab fa-x-twitter"></i>
-          </a>
-          <a href="https://youtube.com" className="icon" data-label="YouTube" target="_blank">
-            <i className="fab fa-youtube"></i>
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
