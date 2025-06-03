@@ -331,10 +331,13 @@ h1, h2, h3, .logo {
 /* Japan-specific hero */
 .japan-hero {
   background-image: url('/herosec/japan.png'); 
-  .mexican-hero {
-  background-image: url('/mexico.jpg'); /* make sure this file exists in /public */
 }
+.mexican-hero {
+  background-image: url('/herosec/mexico.png'); 
 
+}
+.french-hero{
+  background-image: url('/herosec/france.png'); 
 }
 
 
