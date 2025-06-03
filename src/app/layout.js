@@ -1,3 +1,4 @@
+import Footer from './footer';
 import './globals.css';
 import Header from './Header';
 import { Playfair_Display, Dancing_Script, Inter } from 'next/font/google';
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
       </body>
+      <Footer/>
     </html>
   );
 }
