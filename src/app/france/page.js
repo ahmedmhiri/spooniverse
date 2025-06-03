@@ -5,35 +5,35 @@ const recipes = [
     title: 'Boeuf Bourguignon',
     date: 'April 30, 2025',
     desc: 'A slow-cooked beef stew braised in red wine, with mushrooms, onions, carrots, and herbs. A rich and comforting French classic.',
-    image: '/recipes/Boeuf-Bourguignon.jpg',
+    image: '/recipes/boeuf bourguignon.jpg',
     href: '/france/boeuf-bourguignon'
   },
   {
     title: 'Coq au Vin',
     date: 'April 29, 2025',
     desc: 'Chicken braised in red wine, with mushrooms, onions, garlic, and herbs. A rustic French dish full of flavor.',
-    image: '/recipes/Coq-au-Vin.jpg',
+    image: '/recipes/coq au vin.jpg',
     href: '/france/coq-au-vin'
   },
   {
     title: 'Ratatouille',
     date: 'April 28, 2025',
     desc: 'A medley of seasonal vegetables like eggplant, zucchini, and peppers, stewed with garlic and olive oil. A light yet flavorful dish from Provence.',
-    image: '/recipes/Ratatouille.jpg',
+    image: '/recipes/ratatouille.jpg',
     href: '/france/ratatouille'
   },
   {
     title: 'Quiche Lorraine',
     date: 'April 27, 2025',
     desc: 'A savory pie made with eggs, cream, bacon, and cheese. This iconic French dish is perfect for brunch or a light meal.',
-    image: '/recipes/Quiche-Lorraine.jpg',
+    image: '/recipes/quiche lorraine.jpg',
     href: '/france/quiche-lorraine'
   },
   {
     title: 'Soupe à l\'Oignon',
     date: 'April 26, 2025',
     desc: 'A deeply flavorful French onion soup made from caramelized onions, beef stock, and topped with melted cheese and toasted bread.',
-    image: '/recipes/Soupe-a-l-Oignon.jpg',
+    image: '/recipes/soupe a loignon.jpg',
     href: '/france/soupe-a-l-oignon'
   }
 ];
