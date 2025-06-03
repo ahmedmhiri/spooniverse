@@ -324,7 +324,7 @@ h1, h2, h3, .logo {
   font-size: 1.4rem;
 }
 /*italian-specific hero */
-.italian-hero {
+.italy-hero {
   background-image: url('/herosec/italy.png'); 
 }
 
@@ -332,11 +332,11 @@ h1, h2, h3, .logo {
 .japan-hero {
   background-image: url('/herosec/japan.png'); 
 }
-.mexican-hero {
+.mexico-hero {
   background-image: url('/herosec/mexico.png'); 
 
 }
-.french-hero{
+.france-hero{
   background-image: url('/herosec/france.png'); 
 }
 
