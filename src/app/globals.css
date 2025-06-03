@@ -47,6 +47,9 @@ h1, h2, h3, .logo {
   text-decoration: none;
   font-family: var(--font-dancing);
 }
+.logo:hover {
+  color: #702963 !important;
+}
 
 
 .nav-links {
@@ -73,7 +76,7 @@ h1, h2, h3, .logo {
 }
 
 .nav-links a:hover {
-  color: #702963;
+  color: #702963 !important;
 }
 
 /* Headline Text */
@@ -338,6 +341,9 @@ h1, h2, h3, .logo {
 }
 .france-hero{
   background-image: url('/herosec/france.png'); 
+}
+.tunisia-hero{
+  background-image: url('/herosec/tunisia.png'); 
 }
 
 

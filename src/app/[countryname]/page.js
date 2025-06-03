@@ -160,7 +160,7 @@ const allRecipes = {
             title: 'Brik à l\'œuf',
             date: 'April 29, 2025',
             desc: 'Crispy fried pastry filled with egg, tuna, capers, and parsley. A traditional appetizer with a perfect golden crunch.',
-            image: '/recipes/brik.jpg',
+            image: '/recipes/Brik.jpeg',
             href: '/tunis/brik-a-loeuf'
         },
         {
@@ -174,14 +174,14 @@ const allRecipes = {
             title: 'Lablabi',
             date: 'April 27, 2025',
             desc: 'A hearty chickpea soup flavored with garlic, cumin, harissa, and olive oil, topped with pieces of bread and egg.',
-            image: '/recipes/lablabi.jpg',
+            image: '/recipes/Lablabi.jpeg',
             href: '/tunis/lablabi'
         },
         {
             title: 'Kaak Warka',
             date: 'April 26, 2025',
             desc: 'A delicate Tunisian pastry ring filled with almond paste and scented with rose water. Light, fragrant, and sweet.',
-            image: '/recipes/kaak-warka.jpg',
+            image: '/recipes/kaak-Warka.webp',
             href: '/tunis/kaak-warka'
         }
         ]
