@@ -5,35 +5,35 @@ const recipes = [
     title: 'Tacos al Pastor',
     date: 'April 30, 2025',
     desc: 'Marinated pork cooked on a vertical spit with pineapple, served on corn tortillas with onion, cilantro, and salsa.',
-    image: '/recipes/tacos-al-pastor.jpg',
+    image: '/recipes/tacos.jpg',
     href: '/mexico/tacos-al-pastor'
   },
   {
     title: 'Chiles en Nogada',
     date: 'April 29, 2025',
     desc: 'Stuffed poblano peppers topped with walnut sauce, pomegranate seeds, and parsley. A patriotic and flavorful dish.',
-    image: '/recipes/chiles-en-nogada.jpg',
+    image: '/recipes/Chiles-en-Nogada.jpeg',
     href: '/mexico/chiles-en-nogada'
   },
   {
     title: 'Tamales',
     date: 'April 28, 2025',
     desc: 'Corn dough filled with meat, vegetables, or sweet flavors, wrapped in corn husks and steamed to perfection.',
-    image: '/recipes/tamales.jpg',
+    image: '/recipes/Tamales.jpeg',
     href: '/mexico/tamales'
   },
   {
     title: 'Pozole',
     date: 'April 27, 2025',
     desc: 'A hearty traditional soup made with hominy and pork, topped with shredded lettuce, radish, oregano, and lime.',
-    image: '/recipes/pozole.jpg',
+    image: '/recipes/Pozole.jpg',
     href: '/mexico/pozole'
   },
   {
     title: 'Mole Poblano',
     date: 'April 26, 2025',
     desc: 'A rich, dark sauce made with chiles, chocolate, spices, and nuts, traditionally served over turkey or chicken.',
-    image: '/recipes/mole-poblano.jpg',
+    image: '/recipes/Mole-Poblano.jpg',
     href: '/mexico/mole-poblano'
   }
 ];
