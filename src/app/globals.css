@@ -345,6 +345,17 @@ h1, h2, h3, .logo {
 .tunisia-hero{
   background-image: url('/herosec/tunisia.png'); 
 }
+
+
+
+
+
+
+
+
+
+
+
 .recipe-container {
   position: relative;
 }
@@ -372,8 +383,6 @@ h1, h2, h3, .logo {
 .recipe-card {
   display: flex;
   gap: 40px;
-  background-color: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(10px);
   padding: 30px;
   border-radius: 15px;
   max-width: 1000px;
@@ -384,14 +393,23 @@ h1, h2, h3, .logo {
   width: 300px;
   height: 200px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
+  position: absolute;
+  left: 100px;
+  bottom: 100px; 
+  background: #fff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .recipe-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 20px; 
 }
+
 
 .recipe-info {
   flex: 1;
