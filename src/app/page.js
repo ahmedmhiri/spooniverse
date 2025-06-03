@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import './globals.css';
-import Footer from  './footer';
 const countries = [
   { name: 'Italy', flag: '/flags/italy.png', href: '/italy' },
   { name: 'Japan', flag: '/flags/japan.png', href: '/japan' },

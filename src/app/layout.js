@@ -1,4 +1,4 @@
-import Footer from './footer';
+import Footer from './Footer'
 import './globals.css';
 import Header from './Header';
 import { Playfair_Display, Dancing_Script, Inter } from 'next/font/google';
