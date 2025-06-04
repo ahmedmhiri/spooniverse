@@ -358,84 +358,222 @@ h1, h2, h3, .logo {
 
 .recipe-container {
   position: relative;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .recipe-hero-blur {
+  position: absolute;
   width: 100%;
-  height: 400px;
+  height: 100%;
   background-size: cover;
   background-position: center;
   filter: blur(8px) brightness(0.6);
+  z-index: 1;
 }
 
 .recipe-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 400px;
+  z-index: 2;
+  width: 90%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-}
-
-.recipe-card {
-  display: flex;
-  gap: 40px;
   padding: 30px;
-  border-radius: 15px;
+  gap: 60px;
   max-width: 1000px;
-  width: 100%;
+  color: white;
+  border-radius: 15px;
+  left: 130px;
 }
 
 .recipe-image-wrapper {
-  width: 300px;
-  height: 200px;
-  overflow: hidden;
+  width: 450px;
+  height: 300px;
   border-radius: 20px;
-  position: absolute;
-  left: 100px;
-  bottom: 100px; 
-  background: #fff; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: black;
+  border: 3px solid white ;
+
+  
 }
 
 .recipe-image {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 
-
-.recipe-info {
-  flex: 1;
+.recipe-info h1,
+.recipe-info p,
+.recipe-info ul {
+  color: white;
+}
+.recipe-nutrition {
+  margin-top: 20px;
 }
 
-.recipe-title {
-  font-size: 28px;
+.nutrition-heading {
   font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  color: white;
 }
 
-.recipe-desc {
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.recipe-nutrition h2 {
+.nutrition-grid {
+  display: flex;
+  flex-wrap: nowrap; /* force one line */
+  gap: 10px;
+  overflow-x: auto;  /* allows horizontal scroll if needed */
   margin-top: 10px;
 }
 
-.recipe-nutrition ul {
-  padding-left: 20px;
+.nutrition-box {
+  background: #702963;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 80px;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nutrition-box .label {
+  display: block;
+  background-color: #702963;
+  color: white;
+  padding: 4px 0;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.nutrition-box .value {
+  display: block;
+  background-color: white;
+  color: #333;
+  padding: 6px 0;
+  font-weight: 500;
+}
+.recipe-meta {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+  align-items: flex-start;
+}
+
+.meta-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.meta-icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+  object-fit: contain;
+}
+
+.time-details p {
+  margin: 0;
+  font-size: 15px;
+}
+
+
+.ingredients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.person-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.person-counter button {
+  background-color: #000000;
+  color: white;
+  font-size: 18px;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.person-counter button:hover {
+  background-color: #ffffff;
+  color: #702963;
+}
+
+.ingredients-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ingredients-box li {
+  font-size: 16px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
 }
 
 
 
 
+.steps-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
 
+.steps-list {
+  list-style: none;
+  counter-reset: step-counter;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
 
+.step-item {
+  font-size: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  line-height: 1.6;
+}
+
+.step-number {
+  font-weight: bold;
+  color: white;
+  margin-right: 8px;
+}
+.boxes-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.ingredients-box,
+.steps-box {
+  background: #702963;
+  border-radius: 15px;
+  padding: 20px 30px;
+  width: 450px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: white;
+}
