@@ -153,35 +153,35 @@
       "date": "April 30, 2025",
       "desc": "A national dish made from steamed semolina, spiced vegetables, and tender lamb or fish, served with rich tomato sauce.",
       "image": "/recipes/couscous.jpg",
-      "href": "/tunis/couscous-tunisien"
+      "href": "/tunisia/couscous-tunisien"
     },
     {
       "title": "Brik à l'œuf",
       "date": "April 29, 2025",
       "desc": "Crispy fried pastry filled with egg, tuna, capers, and parsley. A traditional appetizer with a perfect golden crunch.",
       "image": "/recipes/Brik.jpeg",
-      "href": "/tunis/brik-a-loeuf"
+      "href": "/tunisia/brik-a-loeuf"
     },
     {
       "title": "Ojja Merguez",
       "date": "April 28, 2025",
       "desc": "Spicy tomato and harissa stew with poached eggs and grilled merguez sausage. A warming dish served with bread.",
       "image": "/recipes/ojja-merguez.jpg",
-      "href": "/tunis/ojja-merguez"
+      "href": "/tunisia/ojja-merguez"
     },
     {
       "title": "Lablabi",
       "date": "April 27, 2025",
       "desc": "A hearty chickpea soup flavored with garlic, cumin, harissa, and olive oil, topped with pieces of bread and egg.",
       "image": "/recipes/Lablabi.jpeg",
-      "href": "/tunis/lablabi"
+      "href": "/tunisia/lablabi"
     },
     {
       "title": "Kaak Warka",
       "date": "April 26, 2025",
       "desc": "A delicate Tunisian pastry ring filled with almond paste and scented with rose water. Light, fragrant, and sweet.",
       "image": "/recipes/kaak-Warka.webp",
-      "href": "/tunis/kaak-warka"
+      "href": "/tunisia/kaak-warka"
     }
   ]
 }
