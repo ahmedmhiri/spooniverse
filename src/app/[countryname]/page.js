@@ -1,31 +1,73 @@
-import allRecipes from '../data/allRecipes.json';
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useParams } from 'next/navigation';
 import RecipeCard from '../components/RecipeCard';
+import ClientLayout from '../components/ClientLayout';
 
-export default async function CountryPage({ params }) {
-  const country = params.countryname;
-  const recipes = allRecipes[country] || [];
+export default function CountryPage() {
+  const params = useParams();
+  const countryname = params?.countryname?.toLowerCase();
+  const [recipes, setRecipes] = useState([]);
+  const [error, setError] = useState('');
 
-  if (!country || !recipes.length) {
-    return <h1 style={{ textAlign: 'center' }}>Country not found</h1>;
+  useEffect(() => {
+    if (!countryname) return;
+
+    const fetchData = async () => {
+      try {
+        const res = await fetch('/api/all-recipes', { cache: 'no-store' });
+        const data = await res.json();
+
+        const countryRecipes = data[countryname];
+
+        if (!countryRecipes || countryRecipes.length === 0) {
+          setError('Country not found');
+        } else {
+          setRecipes(countryRecipes);
+        }
+      } catch (err) {
+        setError('Failed to load recipes');
+      }
+    };
+
+    fetchData();
+  }, [countryname]);
+
+  if (error) {
+    return (
+      <ClientLayout>
+        <h1 className="text-center mt-5">{error}</h1>
+      </ClientLayout>
+    );
   }
 
   return (
-    <main>
-      <div className={`hero ${country}-hero`}>
-        <div className="hero-overlay">
-          <h1>{`Taste of ${country.charAt(0).toUpperCase() + country.slice(1)}`}</h1>
-          <p>Explore authentic recipes from {country.charAt(0).toUpperCase() + country.slice(1)}</p>
+    <ClientLayout>
+      <main>
+        {/* Hero Section */}
+        <div className={`hero ${countryname}-hero`}>
+          <div className="hero-overlay text-white text-center py-5">
+            <h1>{`Taste of ${countryname.charAt(0).toUpperCase() + countryname.slice(1)}`}</h1>
+            <p>
+              Explore authentic recipes from{' '}
+              {countryname.charAt(0).toUpperCase() + countryname.slice(1)}
+            </p>
+          </div>
         </div>
-      </div>
 
-      <section>
-        <h2 className="section-title">Popular Recipes</h2>
-        <div className="blog-recipe-list">
-          {recipes.map((r, i) => (
-            <RecipeCard key={i} recipe={r} />
-          ))}
-        </div>
-      </section>
-    </main>
+        {/* Recipes Section */}
+        <section className="container my-5">
+          <h2 className="section-title text-center mb-4">Popular Recipes</h2>
+          <div className="row g-4">
+            {recipes.map((r, i) => (
+              <div className="col-12 col-sm-6 col-lg-12" key={i}>
+                <RecipeCard recipe={r} />
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
+    </ClientLayout>
   );
 }
