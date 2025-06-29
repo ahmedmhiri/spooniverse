@@ -13,7 +13,7 @@ export default function AboutPage() {
           <div className="about-hero-text">
             <h1>Welcome to Spoonivers</h1>
             <p>
-              At Spoonivers, we believe cooking should be simple, delicious, and rooted in real life. Whether you're
+              At Spoonivers, we believe cooking should be simple, delicious, and rooted in real life. Whether you&apos;re
               craving Italian classics, Japanese comfort, Mexican street food, or Tunisian traditions, Spoonivers brings
               global flavors straight to your home kitchen.
             </p>

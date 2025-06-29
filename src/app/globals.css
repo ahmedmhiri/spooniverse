@@ -1041,3 +1041,57 @@ h1, h2, h3, .logo {
   }
 }
 
+.footer {
+  background-color: #702963; /* Purple background as seen in your image */
+  padding: 20px 0;
+  color: white;
+}
+
+.footer .follow-text {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer .signup-text {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer .social-icons a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+
+
+.footer .signup-input {
+  max-width: 150px;
+  min-width: 120px;
+  padding: 8px;
+}
+
+.footer .signup-btn {
+  font-weight: bold;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.footer .signup-btn:hover {
+  background-color: white;
+  color: #702963;
+}
+
+.footer .signup-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+

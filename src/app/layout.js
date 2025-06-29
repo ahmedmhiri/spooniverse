@@ -1,5 +1,5 @@
 import './globals.css';
-import { Playfair_Display, Dancing_Script, Inter } from 'next/font/google';
+import { Playfair_Display, Dancing_Script, Inter } from 'next/font/google'; 
 
 const playfair = Playfair_Display({
   subsets: ['latin'],

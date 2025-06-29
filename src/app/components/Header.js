@@ -80,12 +80,7 @@ export default function Header() {
               </ul>
             </li>
             <li className="nav-item">
-              <Link
-                href="/start"
-                className={`nav-link nav-colored ${pathname === '/start' ? 'fw-bold' : ''}`}
-              >
-                Start Here
-              </Link>
+
             </li>
           </ul>
         </div>
